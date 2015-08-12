@@ -17,7 +17,7 @@ public class SimulationDriver {
          */
         IVoteService iVoteService = new IVoteService();
 //        commnt for check single choice
-//        iVoteService.configureAnsweeType();//multy choce or single choice
+        iVoteService.configureAnsweeType();//multy choce or single choice
         
         iVoteService.configureAnswers();//set the answers
         iVoteService.submitAnswer();//create random number of students and answer to teh question
