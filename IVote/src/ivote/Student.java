@@ -10,4 +10,20 @@ public class Student {
         this.id = id;
         this.studentAnswer = studentAnswer;
     }
+
+    /**
+     * can use this method to re answer to the question
+     *
+     * @param answer
+     */
+    public void answer(Answer answer) {
+        if (!answer.toString().equals(studentAnswer.toString())) {
+            System.out.println(id + "\'s answer has changed from : " + studentAnswer.toString() + " to : " + answer.toString());
+            studentAnswer.count--;
+            studentAnswer = answer;
+            answer.count++;
+
+        } else {
+        }
+    }
 }
